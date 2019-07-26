@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/lib/css/styles.css">
 
@@ -21,8 +22,35 @@
             <a class="flex-sm-fill text-sm-center nav-link active" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/index.html">Home</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/product.html">Product</a>
         </nav>
+         <!-- slider -->
+         <main class="slider">
+            <section>
+              <p class="sliderP">Welcome</p>
+            </section>
+            <section>
+              <p class="sliderP">To</p>
+            </section>
+            <section>
+              <p class="sliderP">FunkoBop</p>
+            </section>
+            </main>
+         <!-- cards -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+    $('.slider').bxSlider({
+  autoControls: true,
+  auto: true,
+  pager: true,
+  slideWidth: 800,
+  mode: 'fade',
+  captions: true,
+  speed: 1000,
+});
+    </script>
   </body>
   </html>

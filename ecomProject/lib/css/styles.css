@@ -1,9 +1,12 @@
 /* This is going to be used for any modified/custom styling */
 
+/* all pages */
 .navbar-brand{
     display: flex;
     justify-content: center;
 }
+
+/* contact page */
 form{
     margin: 100px;
     border: 2px ridge black;
@@ -14,3 +17,19 @@ form{
     display: flex;
     justify-content: center;
 }
+
+/* index page */
+.bx-wrapper{
+    margin: 0 auto;
+    margin-top: 10pc;
+    padding: 50px;
+}
+.sliderP{
+    font-size: 40px;
+    
+}
+/* Product page */
+/* .productSec{
+    display: flex;
+
+} */
