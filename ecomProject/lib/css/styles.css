@@ -6,6 +6,11 @@
 }
 form{
     margin: 100px;
-    border: 60%;
-    border-color: black 2px;
+    border: 2px ridge black;
+    border-radius: 15px;
+    padding: 20px;
+}
+.contactH{
+    display: flex;
+    justify-content: center;
 }
