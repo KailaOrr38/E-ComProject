@@ -20,13 +20,22 @@ form{
 
 /* index page */
 .bx-wrapper{
-    margin: 0 auto;
-    margin-top: 10pc;
-    padding: 50px;
+    margin: 77px auto;
 }
 .sliderP{
+    display: flex;
+    justify-content: center;
     font-size: 40px;
     
+}
+.deadpoolgif{
+    height: 100%;
+    width: 100%;
+}
+
+.bx-viewport{
+    width: 100%;
+    height: 100%;
 }
 /* Product page */
 /* .productSec{
