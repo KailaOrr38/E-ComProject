@@ -13,6 +13,7 @@
   <body>
     <!-- logo -->
     <a class="navbar-brand" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/index.html"><img src="FunkoBop_transparent.png" height="100" width="100"></a>
+
     <!-- Navbar -->
       <nav class="nav nav-pills flex-column flex-sm-row">
       <!-- links to Home page and Product page -->
@@ -20,10 +21,43 @@
         <a class="flex-sm-fill text-sm-center nav-link" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/index.html">Home</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/product.html">Product</a>
       </nav>
-    <!-- Form -->
-    <!-- button -->
+
+      <!-- Form -->
+    <form method="POST">
+      <label for="enterYourName">Enter Your Name Here</label>
+      <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Enter Your Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="Rate" alt="Rate How Well i Did">Rate How Well I Did</label>
+        <select class="form-control" id="exampleFormControlSelect1" alt="Select A Number">
+          <option alt="One">1</option>
+          <option alt="Two">2</option>
+          <option alt="Three">3</option>
+          <option alt="Four">4</option>
+          <option alt="Five">5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="tellMeAbouYourExperience">How Can We Improve Your Experience?</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type Here..." rows="3"></textarea>
+      </div>
+
+      <!-- button -->
+      <button  type="button" class="btn btn-outline-secondary">Enter</button>
+    </form>
     <!-- Optional JavaScript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script></script>
   </body>
 </html>

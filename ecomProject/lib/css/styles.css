@@ -1,5 +1,11 @@
 /* This is going to be used for any modified/custom styling */
+
 .navbar-brand{
     display: flex;
     justify-content: center;
+}
+form{
+    margin: 100px;
+    border: 60%;
+    border-color: black 2px;
 }
