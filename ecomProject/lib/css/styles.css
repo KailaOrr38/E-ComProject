@@ -37,6 +37,9 @@ form{
     width: 100%;
     height: 100%;
 }
+.bx-wrapper .bx-controls-direction a {
+    top: calc(50% + 60px);
+}
 /* Product page */
 /* .productSec{
     display: flex;
