@@ -54,14 +54,24 @@ form{
     grid-column-gap: 50px;
     grid-row-gap: 50px;
 }
-/* .card{
-    height: 700px;
-    width: 400px;
+/* .nav-item.dropdown{
+    border-radius: .25rem;
 } */
-/*.card-img-top{
-    height: 300px;
-    width: 300px;
+/* .nav.nav-pills.flex-column.flex-sm-row{
+    display: grid;
+    grid-template-rows: 25% 25% 25%;
+    grid-template-columns: 25% 25% 25%;
 } */
+    /* @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  } */
 /* Footer */
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: flex;
