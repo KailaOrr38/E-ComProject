@@ -54,6 +54,12 @@ form{
     grid-column-gap: 50px;
     grid-row-gap: 50px;
 }
+.productP{
+    margin: 20px; 
+    font-size: 40px; 
+    text-align: center; 
+    font-family: 'Josefin Sans', sans-serif;
+}
 /* .nav-item.dropdown{
     border-radius: .25rem;
 } */
