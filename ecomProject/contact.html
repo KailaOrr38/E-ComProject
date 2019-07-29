@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/lib/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Russo+One|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
     <title>FunkoBop Shop</title>
   </head>
   <body>
     <!-- logo -->
-    <a class="navbar-brand" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/index.html"><img src="FunkoBop_transparent.png" height="200" width="200"></a>
+    <a class="navbar-brand" href="/Users/kallaorr/Documents/E-ComProject/ecomProject/index.html"><img src="FunkoBop_transparent.png" height="200" width="200" alt="FunkoBop Logo"></a>
 
     <!-- Navbar -->
       <nav class="nav nav-pills flex-column flex-sm-row">
@@ -23,9 +26,9 @@
       </nav>
 
       <!-- Form -->
-    <form action="#" method="POST">
-      <h1 class="contactH">Put Your Information Here!</h1>
-      <label for="enterYourName">Enter Your Name Here</label>
+    <form method="POST" action="#">
+      <h1 class="contactH" style="font-family:'Russo One',sans-serif;">Put Your Information Here!</h1>
+      <label id="enterYourName" style="font-family:'Josefin Sans', sans-serif;">Enter Your Name Here</label>
       <div class="form-row">
           <div class="col">
             <input type="text" class="form-control" placeholder="First name">
@@ -35,21 +38,21 @@
           </div>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Enter Your Email</label>
+        <label for="exampleFormControlInput1" style="font-family:'Josefin Sans', sans-serif;">Enter Your Email</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
       <div class="form-group">
-        <label for="Rate" alt="Rate How Well i Did">Rate How Well We Did</label>
-        <select class="form-control" id="exampleFormControlSelect1" alt="Select A Number">
-          <option alt="One">1</option>
-          <option alt="Two">2</option>
-          <option alt="Three">3</option>
-          <option alt="Four">4</option>
-          <option alt="Five">5</option>
+        <label id="Rate" style="font-family:'Josefin Sans', sans-serif;">Rate How Well We Did</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="tellMeAbouYourExperience">How Can We Improve Your Experience?</label>
+        <label id="tellMeAbouYourExperience" style="font-family:'Josefin Sans', sans-serif;">How Can We Improve Your Experience?</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type Here..." rows="3"></textarea>
       </div>
 
@@ -58,8 +61,30 @@
     </form>
     <!-- Optional JavaScript -->
     <!-- jQuery -->
+    <footer>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script></script>
+    <script>
+      $("form").val({
+        invalidHandler: function(event, validator) {
+    // 'this' refers to the form
+    var errors = val.numberOfInvalids();
+    if (errors) {
+      var message = errors == 1
+        ? 'You missed 1 field. It has been highlighted'
+        : 'You missed ' + errors + ' fields. They have been highlighted';
+      $("div.error span").html(message);
+      $("div.error").show();
+    } else {
+      $("div.error").hide();
+    }
+  }
+});
+
+    </script>
   </body>
-  <footer></footer>
 </html>

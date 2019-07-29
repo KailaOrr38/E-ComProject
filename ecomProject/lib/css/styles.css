@@ -16,6 +16,7 @@ form{
 .contactH{
     display: flex;
     justify-content: center;
+    font-family: 'Russo One', sans-serif;
 }
 
 /* index page */
@@ -26,8 +27,8 @@ form{
     display: flex;
     justify-content: center;
     font-size: 40px;
-    
 }
+
 .deadpoolgif{
     height: 100%;
     width: 100%;
@@ -40,13 +41,58 @@ form{
 .bx-wrapper .bx-controls-direction a {
     top: calc(50% + 60px);
 }
+
 /* Product page */
 .productH{
-    margin: 0 auto;
+    text-align: center; 
+    font-family: 'Russo One', sans-serif;
+
 }
 .productSec{
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
+/* .card{
+    height: 700px;
+    width: 400px;
+} */
+/*.card-img-top{
+    height: 300px;
+    width: 300px;
+} */
+/* Footer */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: flex;
+    justify-content: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    display: flex;
+    justify-content: center;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}  
